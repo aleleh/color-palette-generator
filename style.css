@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body {
+  background-size: 33.33% 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+.color-block{
+  width: 20%;
+  height:100vh;
+  float:left;
+}
+
+#button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer; 
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 4px;
+  transition: transform 0.2s ease-out;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: white;
+  color: black;
+}
+
+#button:hover {
+  /* Pull the button upwards when hovered */
+  transform: translate(-50%, calc(-50% - 2px));
+}
+
+#button:active {
+  /* Push the button downwards when pressed */
+  transform: translate(-50%, calc(-50% + 2px));
+}
+  .hex-code{
+    position: absolute;
+    bottom:0;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+}
